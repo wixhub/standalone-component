@@ -1,6 +1,8 @@
-# TestStandaloneCompV14
+# Test Standalone Components V14
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+Up to V 14.2.2
+Use Standalone Components
 
 ## Development server
 
