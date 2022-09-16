@@ -9,49 +9,31 @@ import { CardComponent } from './card.component';
   imports: [CommonModule, CardComponent],
   template: `
     <fieldset>
-      <legend><<< This is Standalone Component >>></legend>
-      <article class="list">
-        <app-card></app-card>
-        <article class="card" *ngFor="let card of cardsService.cards">
-          <img
-            class="img"
-            src="{{ card.demoUrl }}"
-            alt="Photo of {{ card.iconUrl }}"
-          />
-          <p class="headline">
-            Meet <span class="pet-name">{{ card.description }}</span>
-          </p>
-          <p class="description">
-            <span class="name">{{ card.instructor }}</span> wants you to know
-            this about {{ card.longDescription }}:
-            {{ card.description }}
-          </p>
-          <p class="learn-more">
-            <a href="/details/{{ card.id }}">Learn More</a>
-          </p>
-        </article>
-      </article>
+      <legend>
+        <<< This is Standalone Component Level 0: "List of Cards" >>>
+      </legend>
+      <app-card
+        *ngFor="let card of cardsService.cards"
+        [card]="card"
+      ></app-card>
     </fieldset>
   `,
   styles: [
     `
       fieldset {
         border: 1px solid red;
-      }
-      legend {
-        text-align: center;
-        font-size: 20px;
-        color: red;
-      }
-      .list {
+        background-color: #ffebe6;
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
         gap: 20px;
         padding: 10px;
       }
-      .text {
-        font-size: 25pt;
-        padding: 10px;
+      legend {
+        text-align: center;
+        font-size: 15px;
+        color: red;
       }
     `,
   ],

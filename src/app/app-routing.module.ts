@@ -5,6 +5,11 @@ import { CardsListComponent } from './cards-list.component';
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'list' },
   { path: 'list', component: CardsListComponent },
+  {
+    path: 'details/:id',
+    loadComponent: () =>
+      import('./card-view.component').then((m) => m.CardViewComponent),
+  },
   { path: '**', pathMatch: 'full', redirectTo: 'list' },
 ];
 
