@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { map, Observable } from 'rxjs';
 import { Card, CardsService } from './cards.service';
 import { ActivatedRoute } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-card-view',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   template: `
     <fieldset>
       <legend><<< This is Standalone Component Level 2: "Card View" >>></legend>
