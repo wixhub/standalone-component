@@ -1,11 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Card } from './cards.service';
-
+import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-card',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   template: ` <fieldset>
     <legend><<< This is Standalone Component Level 1: "Card" >>></legend>
     <article>
@@ -16,7 +16,7 @@ import { Card } from './cards.service';
         about {{ card.longDescription }}
       </p>
       <p class="link">
-        <a href="/details/{{ card.id }}">Learn More</a>
+        <a [routerLink]="['/details', card.id]">Learn More</a>
       </p>
     </article>
   </fieldset>`,
