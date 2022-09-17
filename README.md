@@ -6,7 +6,7 @@ Up to V 14.2.2
 
 Use Standalone Components
 
-[Deploy](https://wixhub.github.io/test-standalone-comp-v14/)
+[Demo](https://wixhub.github.io/test-standalone-comp-v14/)
 
 ## Development server
 
