@@ -3,6 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
 Up to V 14.2.2
 Use Standalone Components
+[Deploy](https://wixhub.github.io/test-standalone-comp-v14/)
 
 ## Development server
 
