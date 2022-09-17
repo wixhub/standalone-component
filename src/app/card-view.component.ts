@@ -20,7 +20,7 @@ import { RouterModule } from '@angular/router';
         />
         <article>
           <p class="link">
-            <a href="/list">Back to all courses</a>
+            <a [routerLink]="['/list']">Back to all courses</a>
           </p>
           <h1 class="main-text">Course "{{ card.description }}"</h1>
           <h2>
